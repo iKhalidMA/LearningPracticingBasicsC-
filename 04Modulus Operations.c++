@@ -16,5 +16,7 @@ int main()
 
         cout << (num1+num2 + num3) / (num4 +num5)<<endl;
         cout << ((num1+num2+num3)/3) / ((num4+num5)/2);
+
+        //
     return 0;
 }
