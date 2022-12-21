@@ -46,6 +46,51 @@ int main() {
     // - if the first is even and the second is odd then find thier subtraction  A-B
     } else if ( num1 %2 == 0 & num2 % 2 == 1){
         cout << num1 - num2;
-    }
+    } // --------------- 
+
+    // SORT 3 NUMBERS
+    //  Given 3 integrs , Sort (order) them in ascending order and print them.
+
+    int a, b, c, tmp;
+	cin >> a >> b >> c;
+
+    if (b < a) { // Swap them
+
+		tmp = a;
+		a = b;
+		b = tmp;
+	}
+
+    if (c < b) { // Swap them
+
+		tmp = b;
+		b = c;
+		c = tmp;
+
+   if (b < a) {	// Swap them{
+			tmp = a;
+			a = b;
+			b = tmp;
+		}
+   cout<<a<<", "<<b<<", "<<c<<"\n";
+
+// Maximum but Constrained 
+//   Given 3 integers, you have to find the biggest one of them which is < 100;
+//      print -1 if no such number 
+
+    int int1, int3, int3, temp;
+    cin >> int1>> int2>> int3;
+    int res = -1;
+
+    if (int1>100 && int1 > res)
+        res = int1;
+
+      if (int2>100 && int2> res)
+        res = int2;
+
+         if (int3>100 && int13 > res)
+        res = int3;
+
+       cou<< res; 
 return 0;
   }
