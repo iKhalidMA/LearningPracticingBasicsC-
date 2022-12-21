@@ -25,5 +25,27 @@ int main() {
             cout << -num;
         }   
     }
+
+    // Read 2 integers, A B and print based on following case:
+    // - if both are odd print their product A*B;
+
+    int num1 , num2 ;
+    cin>> num1 >>num2;
+
+    if (num1&num2 % 2 == 1){
+        cout<< num1*num2;
+    
+    // - if both are even print their divisson A/b
+    } else if ( num1&num2 % 2 ==0){
+        cout << (double)num / num2;
+    
+    // - if the first is odd and the second is even then find thier sumition A+B;
+    } else if (num1 %2 ==1 & num2 % 2 ==0){
+        cout << num1 +num2;
+    
+    // - if the first is even and the second is odd then find thier subtraction  A-B
+    } else if ( num1 %2 == 0 & num2 % 2 == 1){
+        cout << num1 - num2;
+    }
 return 0;
   }
